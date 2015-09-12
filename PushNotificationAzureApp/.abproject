@@ -1,0 +1,45 @@
+{
+  "ProjectName": "PushNotificationAzureApp",
+  "ProjectGuid": "ff98285f-f9b6-4a8a-bd38-638819aec09c",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.PushNotificationAzureApp",
+  "DisplayName": "PushNotificationAzureApp",
+  "Author": "",
+  "Description": "PushNotificationAzureApp",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{9fcddeb4-3091-4806-95a8-7321910a9716}",
+  "WP8ProductID": "{85740493-18b0-40f6-a4e6-fc0653fb6bc0}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.PushNotificationAzureApp",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
