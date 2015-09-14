@@ -33,7 +33,7 @@
     		
     		// Platform-specific registrations.
             if ( device.platform === 'android' || device.platform === 'Android' ){
-                alert();
+                //alert();
     			// Register with GCM for Android apps.
                 pushNotification.register(
                    app.successHandler, app.errorHandler,
@@ -89,54 +89,6 @@
             }
             app.deviceWidth = windowWidth;
         }catch (err) {
-        }
-        
-        
-        
-        
-        try {
-            app.mobileClient = new WindowsAzure.MobileServiceClient(app.MOBILE_SERVICE_URL, app.MOBILE_SERVICE_APP_KEY);
-            //todoItemTable = app.mobileClient.getTable('PushedNews');
-    	    			
-            // Define the PushPlugin.
-    		var pushNotification = window.plugins.pushNotification;
-            
-            //var device = windows.plugins
-    		
-    		// Platform-specific registrations.
-            if ( device.platform === 'android' || device.platform === 'Android' ){
-    			// Register with GCM for Android apps.
-                pushNotification.register(
-                   app.successHandler, app.errorHandler,
-                   { 
-    				"senderID": app.GCM_SENDER_ID, 
-    				"ecb": "app.onNotificationGCM" 
-    				});
-            } else if (device.platform === 'iOS') {
-                // Register with APNS for iOS apps.			
-                pushNotification.register(
-                    app.tokenHandler,
-                    app.errorHandler, { 
-    					"badge":"true",
-    					"sound":"true",
-    					"alert":"true",
-                        "ecb": "app.onNotificationAPN"
-                    });
-            }
-    		else if(device.platform === "Win32NT"){
-    			// Register with MPNS for WP8 apps.
-    			pushNotification.register(
-    				app.channelHandler,
-    				app.errorHandler,
-    				{
-    					"channelName": "MyPushChannel",
-    					"ecb": "app.onNotificationWP8",
-    					"uccb": "app.channelHandler",
-    					"errcb": "app.ErrorHandler"
-    			});
-    		}
-        }catch (err) {
-            alert((err.message)?err.message:"Error 222");
         }
         
     }
