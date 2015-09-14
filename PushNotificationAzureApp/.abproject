@@ -2,25 +2,24 @@
   "ProjectName": "PushNotificationAzureApp",
   "ProjectGuid": "ff98285f-f9b6-4a8a-bd38-638819aec09c",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.PushNotificationAzureApp",
+  "AppIdentifier": "com.pinfo.PNApp",
   "DisplayName": "PushNotificationAzureApp",
-  "Author": "",
+  "Author": "PushNotificationAzureApp",
   "Description": "PushNotificationAzureApp",
-  "BundleVersion": "1.0",
-  "AndroidVersionCode": "1",
+  "BundleVersion": "3.3",
+  "AndroidVersionCode": "10",
   "iOSDeviceFamily": [
     "1",
     "2"
   ],
   "iOSBackgroundMode": [],
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
-  "FrameworkVersion": "3.7.0",
+  "FrameworkVersion": "3.0.0",
   "AndroidPermissions": [
     "android.permission.INTERNET"
   ],
   "DeviceOrientations": [
-    "Portrait",
-    "Landscape"
+    "Portrait"
   ],
   "AndroidHardwareAcceleration": "false",
   "iOSStatusBarStyle": "Default",
@@ -41,5 +40,16 @@
     "ID_RESOLUTION_WVGA",
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
+  ],
+  "iOSDeploymentTarget": "6.0",
+  "CorePlugins": [
+    "com.phonegap.plugins.pushPlugin",
+    "org.apache.cordova.device",
+    "org.apache.cordova.device-motion",
+    "org.apache.cordova.device-orientation",
+    "org.apache.cordova.dialogs",
+    "org.apache.cordova.inappbrowser",
+    "org.apache.cordova.network-information",
+    "org.apache.cordova.splashscreen"
   ]
 }
